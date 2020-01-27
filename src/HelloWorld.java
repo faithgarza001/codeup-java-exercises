@@ -22,11 +22,6 @@ Create an int variable named myFavoriteNumber and assign your favorite number to
         System.out.println(myString);
 
 
-
-
-
-
-
         /* Complete Change your code to assign a character value to myString. What do you notice?Too many characters in a character literal and incompatible types*/
 
         char c = 'M';
@@ -55,7 +50,7 @@ Create an int variable named myFavoriteNumber and assign your favorite number to
 
 
 
-        /*Change your code to assign the value 123L (Note the 'L' at the end) L is a way to indicate that a literal long number is assigned to myNumber.*/
+        /* Complete Change your code to assign the value 123L (Note the 'L' at the end) L is a way to indicate that a literal long number is assigned to myNumber.*/
 
 //        long myNumber = 123L;
 //        System.out.println(myNumber);
@@ -64,24 +59,13 @@ Create an int variable named myFavoriteNumber and assign your favorite number to
         System.out.println(myNumber);
 
 
+        /* Complete Change your code to assign the value 123 to myNumber. Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does? Because there is a literal double (3.14) which doesn't fit in a long variable location 123 is an int and an int fits in a long variable location*/
 
 
+        /* Complete Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this? Put an f on the end of 3.14 or float myNumber = (float) 3.14*/
 
-
-
-
-
-        /*Change your code to assign the value 123 to myNumber. Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does? Because there is an incorrect variable declaration*/
-
-
-
-
-
-
-
-        /*Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?*/
-
-
+//        float myNumber = 123;
+//        System.out.println(myNumber);
 
         /*Copy and paste the following code blocks one at a time and execute them What is the difference between the above code blocks? Explain why the code outputs what it does*/
 
@@ -106,14 +90,21 @@ Create an int variable named myFavoriteNumber and assign your favorite number to
 //        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) o;
+        //The above code is considered inconvertible types.
 
         /*What are the two different types of errors we are observing? Inconvertible Types &*/
 //        int three = (int) "three";
 
-
+        Integer theNumberThree = 3;
+        Object o = theNumberThree;
+        int three = (int) o;
+        System.out.println(three);
 
 
        /* What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
+
+
+
 
         Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type*/
     }
