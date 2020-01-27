@@ -107,6 +107,10 @@ Create an int variable named myFavoriteNumber and assign your favorite number to
 
 
         Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type*/
+
+       int num2 = Integer.MAX_VALUE;
+       System.out.println(num2++);
+       System.out.println(num2);
     }
 }
 
