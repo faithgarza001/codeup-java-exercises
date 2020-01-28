@@ -86,6 +86,14 @@ Assume that the user will enter valid numeric data for length and width.*/
 The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.*/
         /* Look into catch try methods */
 
+/*Some Examples of my Own
+
+The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.*/
+
+
+
+
+
 
     }
 }
