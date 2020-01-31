@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 public class Input {
-    private Scanner scanner, // = new Scanner(System.in);
+    private Scanner scanner;
 
     //Instance of input and are substantiation of scanner
     public Input() {
@@ -13,15 +13,18 @@ public class Input {
 
 
     public String getString() {
-
-        return null;
+        String answer;
+        System.out.println("Enter a string: ");
+        answer = this.scanner.next();
+        return answer;
 
     }
 
     public boolean yesNo() {
-
-
-        return false;
+        String answer;
+        System.out.println("What is your answer? (yes/no)");
+        answer = this.scanner.next();
+        return answer.toLowerCase().startsWith("y");
     }
 
     public int getInt(int min, int max) {
@@ -45,8 +48,10 @@ public class Input {
     }
 
     public double getDouble(double min, double max) {
-
-
+            double answer;
+            System.out.println("Enter a double");
+            answer = this.scanner.nextDouble();
+            return answer;
 
 
 
