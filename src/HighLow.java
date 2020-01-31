@@ -12,9 +12,11 @@ public class HighLow {
     }
 
 
+
+
     public static void HighLowGame() {
         //Ask if the user is ready to start. If they type in "yes", start the game
-        ArrayList = [1, 2, 3];
+
         Integer a = null;
         Integer b = null;
         Scanner scanner = new Scanner(System.in);
@@ -43,6 +45,7 @@ public class HighLow {
         }
     }
 }
+
 
 
 
