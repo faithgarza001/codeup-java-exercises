@@ -9,13 +9,12 @@ public class HighLow {
         HighLowGame();
 
 
-
     }
 
 
     public static void HighLowGame() {
         //Ask if the user is ready to start. If they type in "yes", start the game
-        ArrayList = [1,2,3];
+        ArrayList = [1, 2, 3];
         Integer a = null;
         Integer b = null;
         Scanner scanner = new Scanner(System.in);
@@ -41,23 +40,7 @@ public class HighLow {
             String youDecide = scanner.next();
 
 
-
-
-            if (youDecide.equalsIgnoreCase(1) {
-
-            } else if (youDecide.equals(2)) {
-
-            }
-            {
-
-            } else if (youDecide.equals(3)) {
-                System.out.print("I must make this game mor interesting!");
-            } else if (youDecide.isEmpty()); {
-                System.out.print("Sorry to see you go");
-            }
         }
-
-
     }
 }
 
