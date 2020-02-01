@@ -5,20 +5,23 @@ import java.util.Scanner;
 
 
 public class HighLow {
+   Integer playerPoints;
+   Integer bugPoints;
+   String responsePlayer;
+   String responseBug;
+
+
+
+
+
+
     public static void main(String[] args) {
-        HighLowGame();
-
-
-    }
-
-
-
-
-    public static void HighLowGame() {
         //Ask if the user is ready to start. If they type in "yes", start the game
-
-        Integer a = null;
-        Integer b = null;
+         playerPoints = 200;
+         bugPoints = 300;
+        if(playerPoints > bugPoints && (playerPoints - bugPoints) >= 2) {
+            return bugPoints;
+        }
         Scanner scanner = new Scanner(System.in);
         System.out.print("What is your name?\n");
 
