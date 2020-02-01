@@ -12,13 +12,13 @@ public class HighLow {
 
         String Go, Look, Pantry, Eat;//Here a string of array (String []) which lies within the parameters.
 
-        System.out.println(" WELCOME TO MY THE Europa ADVENTURE");//This is simply a print that is a string
+        System.out.println(" Welcome to the Europa ADVENTURE");//This is simply a print that is a string
         System.out.println("  ");//
-        System.out.println(" You are in a creepy house! Would you like to go 'upstairs' or into the 'kitchen'? ");
+        System.out.println(" You have been exploring around a few days now you are in a the caves hanging from a zipLine, Would you like to go 'further up' or 'down'? ");
         System.out.print("> ");
         Go = keyboard.next();
         //the code above is assigning the String Go from the array
-        if (Go.equalsIgnoreCase("kitchen")) {
+        if (Go.equalsIgnoreCase("down")) {
             System.out.println("There is a long countertop with dirty dishes everywhere. Off to one side there is, as you'd expect, a refrigerator. You may open the 'refrigerator' or look in the 'pantry'. ");
             System.out.print(">  ");
             Look = keyboard.next();
