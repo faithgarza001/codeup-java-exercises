@@ -19,7 +19,7 @@ public class HighLow {
         System.out.println("  ");//A line between lines printed when code is run.
         System.out.println("There are couple of things you need to know first your health is set at " + playerHP + " your nemesis alien bug is set at " + alienPoints + ".");//String plus int variables concat.
         System.out.println("  ");//A line between lines printed when code is run.
-        System.out.println(" You have been exploring around a few days now you are in a the cave hanging from a zipLine, Would you like to go 'further up' or 'down'? ");
+        System.out.println(" You have been exploring around Europa a few days now, you are in a cave hanging from a zipLine, Would you like to go 'further up' or 'down'? ");
         System.out.print("> ");
         Go = keyboard.next();
         //the code above is assigning the String Go from the array
@@ -44,7 +44,7 @@ public class HighLow {
                     switch (domain) {
 
                         case "function addition(x, y){ return x + y}":
-                            System.out.println("You have knocked some of the life out of those bugs alien life is now," + (alienPoints - 100) + "\nNext type a multiplication function to kill off more of the bugs");
+                            System.out.println("You have knocked some of the life out of those bugs alien life is now," + (alienPoints - 100) + "\nNext type a multiply function to kill off more of the bugs");
                             break;
                     }
                     Scanner sd = new Scanner(System.in);
@@ -55,12 +55,10 @@ public class HighLow {
                     switch (multiply) {
 
                         case "function multiply(x, y){return x * y}":
-                            System.out.print("Success, you have taken out a good amount of the alien bugs");
+                            System.out.print("Success, you have taken out a good amount of the alien bugs" + (alienPoints - 100) + "\nNext type a divide function to kill off more of the bugs");
 
                     }
-            }
-
-
+                 }
             }
         }
     }
