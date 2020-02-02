@@ -43,16 +43,10 @@ public class HighLow {
 
                     switch (domain) {
 
-                        case "function addition(x, y){ return x + y; }":
-                            System.out.println("Next multiplication function");
-                            break;
-
-                            default:
-                            System.out.println("Unknown");
+                        case "function addition(x, y){ return x + y}":
+                            System.out.println("You have knocked some of the life out of those bugs alien life is now," + (alienPoints - 100) + "\nNext type a multiplication function to kill off more of the bugs");
                             break;
                     }
-
-
                     Scanner sd = new Scanner(System.in);
                     String multiply = sd.nextLine();
 
@@ -60,17 +54,11 @@ public class HighLow {
 
                     switch (multiply) {
 
-                        case "function multiply(x, y){return x * y;}":
-                            System.out.println("Success");
+                        case "function multiply(x, y){return x * y}":
+                            System.out.print("Success, you have taken out a good amount of the alien bugs");
 
                     }
-
-
-
-
-
-
-                }
+            }
 
 
             }
