@@ -53,9 +53,10 @@ public class HighLow {
                     multiply = multiply.trim().toLowerCase();
 
                     switch (multiply) {
+//                        int alienPoints = 300;
 
                         case "function multiply(x, y){return x * y}":
-                            System.out.print("Success, you have taken out a good amount of the alien bugs" + (alienPoints - 100) + "\nNext type a divide function to kill off more of the bugs");
+                            System.out.print("Success, you have taken out a good amount of the alien bugs life is now at " + 200 + " great job!");
 
                     }
                  }
