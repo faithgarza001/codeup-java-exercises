@@ -40,13 +40,11 @@ public class Input {
 
 
     }
-  /*  Because there’s no way to convert the text FOOBAR into a number, trying to run this program will result in the following output:*/
+    /*  Because there’s no way to convert the text FOOBAR into a number, trying to run this program will result in the following output:*/
 
 
-
-
-    public static int GetAnInteger() {
-      Scanner sc = new Scanner(System.in);
+    public int GetAnInteger() {
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter an integer: ");
         int i = 0;
 //        System.out.println("You entered ");
@@ -64,23 +62,44 @@ public class Input {
             }
 
         }
+    }
+
+
+
+  //This is the start of your second solution to get integer.
+
+    //    public  int getAnInteger() {
+//        int userInput = 0;
+//        boolean error = true;
+//        do{
+//            try {
+//                System.out.println("\n" + "Enter an integer: ");
+//                userInput = Integer.valueOf(this.scanner.next());
+//                error = false;
+//                System.out.println("You entered: " + userInput);
+//            } catch (NumberFormatException e) {
+//                System.out.print("That's not integer.");
+//            }
+//        }while(error);
+//        return userInput;
+//    }
 //
-        public double getDouble(double min, double max){
-            System.out.print("Enter an integer that contains a decimal: ");
+        public double getDouble ( double min, double max){
+            double answer = 0;
             do {
                 try {
-                    return (int) sc.nextDouble();
-                } catch (InputMismatchException e) {
-                    sc.nextDouble();
-                    System.out.println("Please enter a double");
-
+                    System.out.print("Enter an integer that contains a decimal: " + min + "and" + max);
+                    answer = Double.valueOf(this.scanner.next());
+                } catch (NumberFormatException ex) {
+                    System.out.println("Number format");
                 }
-            } while (true);
-
+            } while (answer < min || answer > max);
+            return answer;
 
         }
-
     }
+
+
 
 
 
