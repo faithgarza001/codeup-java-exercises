@@ -26,6 +26,7 @@ public class Input {
         answer = this.scanner.next();
         return answer.toLowerCase().startsWith("y");
     }
+    /*Your getInt and getDouble methods should make sure that the value returned from the method is actually an int or a double. Do this by using the following methods*/
 
     public int getInt(int min, int max) {
 
@@ -48,21 +49,27 @@ public class Input {
     }
 
     public double getDouble(double min, double max) {
+        try {
             double answer;
             System.out.println("Enter a double");
             answer = this.scanner.nextDouble();
             return answer;
+        } catch (NullPointerException exception) {
+            return 0;
+        }
 
+        }
 
 
     }
 
-    public double getDouble() {
 
+//    public double getDouble() {
+//
+//        return 0;
+//
+//    }
 
-        return 0;
-    }
-}
 
 
 

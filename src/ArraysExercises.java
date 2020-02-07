@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class ArraysExercises {
 
@@ -12,6 +12,8 @@ public class ArraysExercises {
         /*Iterate through the array and print out the name of each person in the array*/
         for (String people : peoples) {
             System.out.println(people);//this for loop will print all  the names of the array perhaps we can go back and create an enhance for loop*/
+            System.out.println();
+
         }
         //System.out.print(peoples.length);//this only prints out the length of the array
     ArraysExercises Faith = new ArraysExercises();
@@ -28,11 +30,19 @@ public class ArraysExercises {
         return stuff;
     }
 
+        ArrayList myArray = new ArrayList<String>();
 
+    public static void setMyArray(ArrayList myArray) {
 
-
-
+        myArray.add("Stuff");
     }
+
+
+}
+
+
+
+
 
 
 
