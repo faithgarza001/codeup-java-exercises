@@ -1,5 +1,6 @@
 package util;
 import java.lang.*;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -31,37 +32,64 @@ public class Input {
     public int getInt(int min, int max) {
 
         int answer;
-        do{
+        do {
             System.out.println("Enter a number between 1 and 10");
             answer = this.scanner.nextInt();
         } while (answer < min || answer > max);
-            return answer;
-
-
-    }
-
-    public int getInt() {
-        int answer;
-        System.out.println("Enter a number: ");
-        answer = this.scanner.nextInt();
         return answer;
 
-    }
-
-    public double getDouble(double min, double max) {
-        try {
-            double answer;
-            System.out.println("Enter a double");
-            answer = this.scanner.nextDouble();
-            return answer;
-        } catch (NullPointerException exception) {
-            return 0;
-        }
-
-        }
-
 
     }
+  /*  Because there’s no way to convert the text FOOBAR into a number, trying to run this program will result in the following output:*/
+
+
+
+
+    public static int GetAnInteger() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        sc = Scanner.nextInt();
+        int i = 0;
+        System.out.println("You entered ");
+
+        while (true) {
+            try {
+                return sc.nextInt();
+            } catch (InputMismatchException e) {
+                sc.next();
+                System.out.print("That’s not "
+                        + "an integer. Try again: ");
+
+
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+    //First find the exception error
+    //try/catch code
+
+//    public double getDouble(double min, double max) {
+//        try {
+//            double answer;
+//            System.out.println("Enter a double");
+//            answer = this.scanner.nextDouble();
+//            return answer;
+//        } catch (NullPointerException exception) {
+//            return 0;
+//        }
+//
+//        }
+//
+//
+//    }
 
 
 //    public double getDouble() {
