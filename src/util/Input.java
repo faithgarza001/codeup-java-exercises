@@ -46,13 +46,13 @@ public class Input {
 
 
     public static int GetAnInteger() {
-        Scanner sc = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
         System.out.print("Enter an integer: ");
-        sc = Scanner.nextInt();
         int i = 0;
-        System.out.println("You entered ");
+//        System.out.println("You entered ");
 
         while (true) {
+
             try {
                 return sc.nextInt();
             } catch (InputMismatchException e) {
@@ -64,9 +64,24 @@ public class Input {
             }
 
         }
+//
+        public double getDouble(double min, double max){
+            System.out.print("Enter an integer that contains a decimal: ");
+            do {
+                try {
+                    return (int) sc.nextDouble();
+                } catch (InputMismatchException e) {
+                    sc.nextDouble();
+                    System.out.println("Please enter a double");
+
+                }
+            } while (true);
+
+
+        }
 
     }
-}
+
 
 
 
