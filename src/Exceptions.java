@@ -32,7 +32,7 @@ public class Exceptions {
                 {0, 2, 6, 3, -1, -8}
         };
         System.out.println(getMinValue(data));
-
+        System.out.println(getMaxValue(data));
 
     }
 
