@@ -12,4 +12,4 @@ out/*
 assess.java
 Greeter.java
 Human.java
-User.java
+tools.User.java

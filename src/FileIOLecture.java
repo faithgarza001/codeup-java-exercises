@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +47,14 @@ public class FileIOLecture {
             Path groceries = Paths.get("data", "groceries.txt");
             Files.write(groceries, fruit);
         } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+        fruit.add("Kiwi"); fruit.add("starfruit");
+        try {
+            Path groceries = Paths.get("data", "groceries.txt");
+            Files.write(groceries, fruit);
+        } catch (IOException ioe){
             ioe.printStackTrace();
         }
     }
